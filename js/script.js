@@ -6,10 +6,12 @@ const ghInfo = async function () {
 
     const repos = await response.json();
     console.log(repos);
+    displayUser(repos);
 };
 ghInfo();
 
-const userInfo = function (repos) {
+
+const displayUser = function (repos) {
     const div = document.createElement("div");
     div.classList.add("user-info");
     div.innerHTML = `<figure>
