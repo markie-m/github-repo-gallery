@@ -30,7 +30,7 @@ const displayUserInfo = function (data) {
 };
 
 const ghRepos = async function () {
-    const fetchRepos = await fetch(`https://api.github.com/users/${username}/repos?sort&per_page=100`);
+    const fetchRepos = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=100`);
     const repoData = await fetchRepos.json();
     console.log(repoData);
     displayRepos(repoData);
