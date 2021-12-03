@@ -3,10 +3,23 @@ const username = "markie-m";
 
 const ghInfo = async function () {
     const response = await fetch(`https://api.github.com/users/${username}`);
-    // Create and name an async function to fetch information from your GitHub profile using the GitHub API address: https://api.github.com. Target the “users” endpoint and use a template literal to add the global username variable to the endpoint: users/${username}. Notice that you’ll add a “$” character in front of the variable name to create a placeholder. Because you’re using a template literal, surround the URL in backticks instead of quotation marks.
 
     const repos = await response.json();
     console.log(repos);
 };
-
 ghInfo();
+
+const userInfo = function (repos) {
+    const div = document.createElement("div");
+    div.classList.add("user-info");
+    div.innerHTML = `<figure>
+    <img alt="user avatar" src=${repos.avatar_url} />
+  </figure>
+  <div>
+    <p><strong>Name:</strong> ${repos.name}</p>
+    <p><strong>Bio:</strong> ${repos.bio}</p>
+    <p><strong>Location:</strong> ${repos.location}</p>
+    <p><strong>Number of public repos:</strong> ${repos.public_repos}</p>
+  </div>`;
+  overview.append(div);
+}
