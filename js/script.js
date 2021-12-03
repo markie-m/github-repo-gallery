@@ -1,5 +1,6 @@
 const overview = document.querySelector(".overview");
 const username = "markie-m";
+const repoList = document.querySelector(".repo-list");
 
 const ghUserInfo = async function () {
     const response = await fetch(`https://api.github.com/users/${username}`);
@@ -24,5 +25,13 @@ const displayUserInfo = function (data) {
         <p><strong>Location:</strong> ${data.location}</p>
         <p><strong>Number of public repos:</strong> ${data.public_repos}</p>
     </div>`;
-  overview.append(div);
-}
+    overview.append(div);
+};
+
+const ghRepos = async function () {
+    const fetchRepos = await fetch(`https://api.github.com/users/${username}/repos?sort&per_page=100`);
+    const repoData = await fetchRepos.json();
+    console.log(repoData);
+};
+
+
