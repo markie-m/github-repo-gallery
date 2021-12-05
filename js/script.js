@@ -46,3 +46,7 @@ const displayRepos = function (repos) {
         repoList.append(repoItem);
     }
 };
+
+repoList.addEventListener("click", function(e) {
+    
+});
