@@ -3,6 +3,8 @@ const username = "markie-m";
 const repoList = document.querySelector(".repo-list");
 const allReposContainer = document.querySelector(".repos");
 const repoData = document.querySelector(".repo-data");
+const backToRepoGallery = document.querySelector(".view-repos");
+const filterInput = document.querySelector(".filter-repos");
 
 const ghUserInfo = async function () {
     const response = await fetch(`https://api.github.com/users/${username}`);
