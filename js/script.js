@@ -78,6 +78,7 @@ const displayRepoInfo = function (repoInfo, languages) {
     repoData.innerHTML = "";
     repoData.classList.remove("hide");
     allReposContainer.classList.add("hide");
+    backToRepoGallery.classList.remove("hide");
     const div = document.createElement("div");
     div.innerHTML = `
         <h3>Name: ${repoInfo.name}</h3>
@@ -88,3 +89,9 @@ const displayRepoInfo = function (repoInfo, languages) {
     `;
     repoData.append(div);
 };
+
+backToRepoGallery.addEventListener("click", function() {
+    allReposContainer.classList.remove("hide");
+    repoData.classList.add("hide");
+    backToRepoGallery.classList.add("hide");
+});
