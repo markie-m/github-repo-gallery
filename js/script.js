@@ -96,3 +96,19 @@ backToRepoGallery.addEventListener("click", function() {
     repoData.classList.add("hide");
     backToRepoGallery.classList.add("hide");
 });
+
+filterInput.addEventListener("input", function(e) {
+    const searchText = e.target.value;
+    console.log(searchText);
+    const repos = document.querySelectorAll(".repo");
+    const searchLowerText = searchText.toLowerCase();
+
+    for (const repo of repos) {
+        const repoLowerText = repo.innerText.toLowerCase();
+        if (repoLowerText.includes(searchLowerText)) {
+            repo.classList.remove("hide");
+        } else {
+            repo.classList.add("hide");
+        }
+    }
+});
