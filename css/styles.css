@@ -59,6 +59,7 @@ h1 {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
 .circle {
@@ -70,6 +71,7 @@ h1 {
     align-self: center;
     margin-top: auto;
     margin-bottom: 8px;
+    box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 20%) inset, 1px 1px 5px 1px rgb(0 0 0 / 19%) inset;
 }
 
 .github-img {
@@ -111,6 +113,7 @@ ul {
     color: white;
     font-size: 18px;
     padding-bottom: 2em;
+    border-top: 1px solid #f86d58;
 }
 
 .user-info figure {
