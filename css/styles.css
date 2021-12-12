@@ -203,6 +203,9 @@ section.repo-data {
 .repo-data h3 {
     text-align: left;
 }
+.repo-data p span {
+    font-weight: bold;
+}
 
 .repo-data .visit {
     text-decoration: none;
