@@ -27,7 +27,8 @@ body {
 }
 
 .fa-github-alt {
-    color: #f86d58;
+    /* color: #f86d58; */
+    color: #FFF5F9;
 }
 
 img {
@@ -82,7 +83,8 @@ h1 {
 h3 {
     width: 100%;
     text-align: center;
-    color: #f86d58;
+    /* color: #f86d58; */
+    color: #db0e5d;
 }
 
 ul {
@@ -113,7 +115,7 @@ ul {
     color: white;
     font-size: 18px;
     padding-bottom: 2em;
-    border-top: 1px solid #f86d58;
+    border-top: 1px solid #483978;
 }
 
 .user-info figure {
@@ -176,7 +178,8 @@ section.repo-data {
 .repo-list li {
     width: 90%;
     margin: 1em 0;
-    border: 1px solid #f86d58;
+    /* border: 1px solid #f86d58; */
+    border: 1px solid #db0e5d;
     padding: 0.5em;
 }
 
