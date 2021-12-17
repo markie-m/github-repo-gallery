@@ -224,8 +224,11 @@ section.repo-data {
 }
 
 .repo-data .visit:hover {
-    background-color: #2f2550;
-    border: 1px solid #ccc;
+    /* background-color: #2f2550; */
+    background-color: #F8F2FD;
+    /* border: 1px solid #ccc; */
+    border: 1px solid #db0e5d;
+    color: #db0e5d;
 }
 
 .button-container {
