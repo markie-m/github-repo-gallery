@@ -28,7 +28,7 @@ body {
 
 .fa-github-alt {
     /* color: #f86d58; */
-    color: #db0e5d;
+    color: #f84a8d;
 }
 
 img {
@@ -183,6 +183,9 @@ section.repo-data {
     border: 1px solid #db0e5d;
     padding: 0.5em;
 }
+/* .repo li:focus {
+    background-color: #eee9ff;
+} */
 
 .repo-list h3 {
     text-align: left;
